@@ -1,0 +1,131 @@
+[gd_resource type="Animation" format=2]
+
+[resource]
+resource_name = "LevelLeave"
+length = 0.8
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Camera:fov")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 30, -0.288658, 0.229187, 0.288658, -0.229187, 20, -0.23779, -0.0428944, 0.23779, 0.0428944 ),
+"times": PoolRealArray( 0, 0.6 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Camera:translation:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( -14, -0.25, 0, 0.25, 0, -14, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.6 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("Camera:translation:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 12, -0.122125, -0.10614, 0.122125, 0.10614, 32, -0.291913, -0.266445, 0.291913, 0.266445 ),
+"times": PoolRealArray( 0, 0.6 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath("Camera:translation:z")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( 14, -0.25, 0, 0.25, 0, 14, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.6 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("CameraFocus:translation:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.6 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("CameraFocus:translation:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 0, -0.0680012, -5.17543, 0.0680012, 5.17543, 20, -0.340485, -0.181892, 0.340485, 0.181892 ),
+"times": PoolRealArray( 0, 0.6 )
+}
+tracks/6/type = "bezier"
+tracks/6/path = NodePath("CameraFocus:translation:z")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.6 )
+}
+tracks/7/type = "method"
+tracks/7/path = NodePath("All cubes")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "tweenCubeGoUp"
+} ]
+}
+tracks/8/type = "method"
+tracks/8/path = NodePath("GUI")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "optionsVisibility"
+} ]
+}
+tracks/9/type = "method"
+tracks/9/path = NodePath("GUI")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "mainGUIVisibility"
+} ]
+}
+tracks/10/type = "method"
+tracks/10/path = NodePath("GUI")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "pauseVisibility"
+} ]
+}
